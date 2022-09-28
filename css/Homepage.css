@@ -491,7 +491,7 @@ nav .material-icons{
 .training-classes  .box{
     width: 350px;
     height: 450px;
-    margin: 0 20px;
+    margin: 30px 20px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -569,13 +569,15 @@ nav .material-icons{
     background-color: var(--dark-color);
     color: white;
     display: flex;
+    margin: 50px 0;
     align-items: center;
     justify-content: center;
 }
 
 .schedules table{
     text-align: center;
-    margin: 130px 60px;
+    margin: 130px 20px;
+    
 }
 
 .schedules table caption{
@@ -614,6 +616,8 @@ margin-bottom: 50px;
 .schedules table td h1{
     font-size: 1rem;
 }
+
+
 
  /* _________________________Contact_________________________ */
 
@@ -666,40 +670,78 @@ textarea{
 }
 
 iframe{
-    width: 25rem;
-    height: 20rem;
+    width: 35vw;
+    height: 30vw;
+    margin: 30px 0;
+}
+
+@media(max-width:800px){
+    .contact{
+        flex-direction: column;
+    }
+    iframe{
+        width: 15rem;
+        height: 10rem;
+    }
 }
 
 /* _________________________________Footer_________________________________ */
 
 footer{
-    width: 100%;
-    height: 30vh;
+    background-color: var(--dark-color);
+    color: white;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    border-top: 1px solid rgba(0,0,0,.2) ;
+    flex-wrap: wrap;
+    padding: 40px 50px;
     margin-top: 40px;
 }
-
-footer .social{
-    position: relative;
-    padding-left: 30px;
+footer section{
+    /* padding: 30px; */
+    margin: 20px 35px;
 }
 
-.social a{
-    text-decoration: none;
-    color: #000;
-    padding: 0 10px;
+footer section h2{
+    font-size: 30px;
+    
+}
+footer section ul{
+    list-style: none;
 }
 
-.social i{
-    color: var(--orange);
+footer section ul li{
+    padding: 4px;
 }
 
-.email-icon{
-    position: absolute;
-    left: 15px;
-    top: 2px;
+footer section ul li a{
+    color: var(--gray-color);
+    font-size: 15px;
+    font-weight: 500;
+    transition: .5s ease;
 }
+
+footer section ul li a:hover{
+    color: var(--danger);
+    padding: 4px;
+}
+footer .social-media a{
+    background-color: var(--gray);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    margin: 20px 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+    transform: translateX(-8px);
+}
+
+footer .social-media a:hover{
+    background-color: var(--orange);
+   
+}
+
+
+
